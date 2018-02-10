@@ -41,7 +41,7 @@ return array(
 		 'Adminer'=>'adminer.php',
 		 'PMA新版'=>'phpmyadmin.php',
 		 'PMA旧版'=>'phpmyadmin_old.php',
-		 '在线工具'=>'http://tool.oschina.net/',   // 如果自己配置的地址打不卡 请加上 http://   如 www.baidu.com  打不开 前面加上  http://www.baidu.com
+		 '二维码生成'=>'http://dev.yunnan.ws/tools/jquery-qrcode.html',
 	     '工具百宝箱'=>'http://tool.lu/',  		 
 		 '运行代码'=>'http://tool.lu/coderunner/',
 		 '模拟提交'=>'test_request.html',		 
