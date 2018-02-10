@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>模拟 post  get 提交器 --  TPshop版权所有</title>
+</head>
+<script src="js/jquery-1.11.1.js"></script>
+<body>
+<script>
+
+function submit2(){	
+	var url = $('#url').val();
+    var method = $("input[name='method']:checked").val();
+		
+	$('#form2').attr('action',url);
+	$('#form2').attr('method',method);		 	
+	
+    $('#form2').submit();
+}
+// 添加刷选条件
+function addTj(){
+
+var ti_name = $("input[name='tj_name']").val();
+
+var addstr = "<tr><td valign='top'><label>"+ti_name +" : </label></td>"+
+         "<td valign='top'><input name='"+ti_name+"' value='请输入参数值!!!' style='width:400px;'/>"+  
+         "<input type='button' value='删除' onclick='$(this).parent().parent().remove();' /></td></tr>";
+	$('table').prepend(addstr);
+}
+
+</script>
+<div>
+<h3>模拟 post  get 提交器  --  TPshop版权所有</h3>
+  <p style="color:#F00;">(用于测试app接口非常有用)</p>
+  <div style="width:700px; float:left;"> 提交地址:
+    <input type="text" size="80" name="url" id="url" value="https://www.baidu.com/s" />
+    <br/>
+    <br/>
+    提交方式:
+    POST
+    <input type="radio" name="method" value="post"/>
+    GET
+    <input type="radio" name="method" value="get"  checked="checked" />
+    <br/>
+    <br/>
+    提交参数名:
+    <input type="text" name="tj_name" value="name" />
+    <button type="button" onclick="addTj()">添加</button>
+    <form method="post" action="" id="form2" target="_blank">
+      <table>
+        <tr>
+          <td valign="top">
+            <label>wd :</label>
+          </td>
+          <td valign="top">                      
+            <input name="wd" value="hello world!!!" style='width:400px;' />
+            <input type="button" onclick="$(this).parent().parent().remove();" value="删除">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="button" value="提交" onclick="submit2();" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  <!--
+    <div style="width:700px; float:right;">
+      <iframe width="700" height="800" id="json_iframe" name="json_iframe" src="http://www.tpshop.com/index.php/Api/Goods/goodsList"></iframe>
+    </div>
+    --> 
+</div>
+</body>
+</html>
