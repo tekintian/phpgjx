@@ -1,6 +1,6 @@
 <?php 
 $config = include_once 'config.php';
-$url = $_SERVER['HTTP_REFERER'].'phpMyAdmin-4.4.11/';
+$url = $_SERVER['HTTP_REFERER'].'phpMyAdmin/';
 
 
 
