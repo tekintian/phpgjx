@@ -39,8 +39,8 @@ return array(
 	'mysql_port' =>'3306', //mysql端口	
 	'menu'=>array( // 菜单配置项
 		 'Adminer'=>'adminer.php',
-		 'phpmyadmin新版'=>'phpmyadmin.php',
-		 'phpmyadmin旧版'=>'phpmyadmin_old.php',
+		 'PMA新版'=>'phpmyadmin.php',
+		 'PMA旧版'=>'phpmyadmin_old.php',
 		 '在线工具'=>'http://tool.oschina.net/',   // 如果自己配置的地址打不卡 请加上 http://   如 www.baidu.com  打不开 前面加上  http://www.baidu.com
 	     '工具百宝箱'=>'http://tool.lu/',  		 
 		 '运行代码'=>'http://tool.lu/coderunner/',
